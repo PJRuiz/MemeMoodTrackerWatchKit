@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9545728B1C12E09E0099ED1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9545728A1C12E09E0099ED1E /* AppDelegate.swift */; };
+		9545728D1C12E09E0099ED1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9545728C1C12E09E0099ED1E /* ViewController.swift */; };
+		954572901C12E09E0099ED1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9545728E1C12E09E0099ED1E /* Main.storyboard */; };
+		954572921C12E09E0099ED1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954572911C12E09E0099ED1E /* Assets.xcassets */; };
+		954572951C12E09E0099ED1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954572931C12E09E0099ED1E /* LaunchScreen.storyboard */; };
+		954572A01C12E09F0099ED1E /* MemeMoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9545729F1C12E09F0099ED1E /* MemeMoodTrackerTests.swift */; };
+		954572AB1C12E09F0099ED1E /* MemeMoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954572AA1C12E09F0099ED1E /* MemeMoodTrackerUITests.swift */; };
+		954572B01C12E09F0099ED1E /* MemeMoodTracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 954572AF1C12E09F0099ED1E /* MemeMoodTracker WatchKit App.app */; };
+		954572B61C12E09F0099ED1E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954572B41C12E09F0099ED1E /* Interface.storyboard */; };
+		954572B81C12E09F0099ED1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954572B71C12E09F0099ED1E /* Assets.xcassets */; };
+		954572BF1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 954572BE1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		954572C41C12E09F0099ED1E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954572C31C12E09F0099ED1E /* InterfaceController.swift */; };
+		954572C61C12E09F0099ED1E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954572C51C12E09F0099ED1E /* ExtensionDelegate.swift */; };
+		954572C81C12E09F0099ED1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954572C71C12E09F0099ED1E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9545729C1C12E09F0099ED1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9545727F1C12E09E0099ED1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954572861C12E09E0099ED1E;
+			remoteInfo = MemeMoodTracker;
+		};
+		954572A71C12E09F0099ED1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9545727F1C12E09E0099ED1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954572861C12E09E0099ED1E;
+			remoteInfo = MemeMoodTracker;
+		};
+		954572B11C12E09F0099ED1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9545727F1C12E09E0099ED1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954572AE1C12E09F0099ED1E;
+			remoteInfo = "MemeMoodTracker WatchKit App";
+		};
+		954572C01C12E09F0099ED1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9545727F1C12E09E0099ED1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954572BD1C12E09F0099ED1E;
+			remoteInfo = "MemeMoodTracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		954572CF1C12E09F0099ED1E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				954572BF1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572D31C12E09F0099ED1E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				954572B01C12E09F0099ED1E /* MemeMoodTracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		954572871C12E09E0099ED1E /* MemeMoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9545728A1C12E09E0099ED1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9545728C1C12E09E0099ED1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9545728F1C12E09E0099ED1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		954572911C12E09E0099ED1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		954572941C12E09E0099ED1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		954572961C12E09E0099ED1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9545729B1C12E09F0099ED1E /* MemeMoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9545729F1C12E09F0099ED1E /* MemeMoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMoodTrackerTests.swift; sourceTree = "<group>"; };
+		954572A11C12E09F0099ED1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954572A61C12E09F0099ED1E /* MemeMoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954572AA1C12E09F0099ED1E /* MemeMoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMoodTrackerUITests.swift; sourceTree = "<group>"; };
+		954572AC1C12E09F0099ED1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954572AF1C12E09F0099ED1E /* MemeMoodTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemeMoodTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		954572B51C12E09F0099ED1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		954572B71C12E09F0099ED1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		954572B91C12E09F0099ED1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954572BE1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MemeMoodTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		954572C31C12E09F0099ED1E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		954572C51C12E09F0099ED1E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		954572C71C12E09F0099ED1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		954572C91C12E09F0099ED1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		954572841C12E09E0099ED1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572981C12E09F0099ED1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572A31C12E09F0099ED1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572BB1C12E09F0099ED1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9545727E1C12E09E0099ED1E = {
+			isa = PBXGroup;
+			children = (
+				954572891C12E09E0099ED1E /* MemeMoodTracker */,
+				9545729E1C12E09F0099ED1E /* MemeMoodTrackerTests */,
+				954572A91C12E09F0099ED1E /* MemeMoodTrackerUITests */,
+				954572B31C12E09F0099ED1E /* MemeMoodTracker WatchKit App */,
+				954572C21C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension */,
+				954572881C12E09E0099ED1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		954572881C12E09E0099ED1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				954572871C12E09E0099ED1E /* MemeMoodTracker.app */,
+				9545729B1C12E09F0099ED1E /* MemeMoodTrackerTests.xctest */,
+				954572A61C12E09F0099ED1E /* MemeMoodTrackerUITests.xctest */,
+				954572AF1C12E09F0099ED1E /* MemeMoodTracker WatchKit App.app */,
+				954572BE1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		954572891C12E09E0099ED1E /* MemeMoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				9545728A1C12E09E0099ED1E /* AppDelegate.swift */,
+				9545728C1C12E09E0099ED1E /* ViewController.swift */,
+				9545728E1C12E09E0099ED1E /* Main.storyboard */,
+				954572911C12E09E0099ED1E /* Assets.xcassets */,
+				954572931C12E09E0099ED1E /* LaunchScreen.storyboard */,
+				954572961C12E09E0099ED1E /* Info.plist */,
+			);
+			path = MemeMoodTracker;
+			sourceTree = "<group>";
+		};
+		9545729E1C12E09F0099ED1E /* MemeMoodTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9545729F1C12E09F0099ED1E /* MemeMoodTrackerTests.swift */,
+				954572A11C12E09F0099ED1E /* Info.plist */,
+			);
+			path = MemeMoodTrackerTests;
+			sourceTree = "<group>";
+		};
+		954572A91C12E09F0099ED1E /* MemeMoodTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				954572AA1C12E09F0099ED1E /* MemeMoodTrackerUITests.swift */,
+				954572AC1C12E09F0099ED1E /* Info.plist */,
+			);
+			path = MemeMoodTrackerUITests;
+			sourceTree = "<group>";
+		};
+		954572B31C12E09F0099ED1E /* MemeMoodTracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				954572B41C12E09F0099ED1E /* Interface.storyboard */,
+				954572B71C12E09F0099ED1E /* Assets.xcassets */,
+				954572B91C12E09F0099ED1E /* Info.plist */,
+			);
+			path = "MemeMoodTracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		954572C21C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				954572C31C12E09F0099ED1E /* InterfaceController.swift */,
+				954572C51C12E09F0099ED1E /* ExtensionDelegate.swift */,
+				954572C71C12E09F0099ED1E /* Assets.xcassets */,
+				954572C91C12E09F0099ED1E /* Info.plist */,
+			);
+			path = "MemeMoodTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		954572861C12E09E0099ED1E /* MemeMoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954572D41C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTracker" */;
+			buildPhases = (
+				954572831C12E09E0099ED1E /* Sources */,
+				954572841C12E09E0099ED1E /* Frameworks */,
+				954572851C12E09E0099ED1E /* Resources */,
+				954572D31C12E09F0099ED1E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954572B21C12E09F0099ED1E /* PBXTargetDependency */,
+			);
+			name = MemeMoodTracker;
+			productName = MemeMoodTracker;
+			productReference = 954572871C12E09E0099ED1E /* MemeMoodTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9545729A1C12E09F0099ED1E /* MemeMoodTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954572D71C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTrackerTests" */;
+			buildPhases = (
+				954572971C12E09F0099ED1E /* Sources */,
+				954572981C12E09F0099ED1E /* Frameworks */,
+				954572991C12E09F0099ED1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9545729D1C12E09F0099ED1E /* PBXTargetDependency */,
+			);
+			name = MemeMoodTrackerTests;
+			productName = MemeMoodTrackerTests;
+			productReference = 9545729B1C12E09F0099ED1E /* MemeMoodTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		954572A51C12E09F0099ED1E /* MemeMoodTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954572DA1C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTrackerUITests" */;
+			buildPhases = (
+				954572A21C12E09F0099ED1E /* Sources */,
+				954572A31C12E09F0099ED1E /* Frameworks */,
+				954572A41C12E09F0099ED1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954572A81C12E09F0099ED1E /* PBXTargetDependency */,
+			);
+			name = MemeMoodTrackerUITests;
+			productName = MemeMoodTrackerUITests;
+			productReference = 954572A61C12E09F0099ED1E /* MemeMoodTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		954572AE1C12E09F0099ED1E /* MemeMoodTracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954572D01C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTracker WatchKit App" */;
+			buildPhases = (
+				954572AD1C12E09F0099ED1E /* Resources */,
+				954572CF1C12E09F0099ED1E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954572C11C12E09F0099ED1E /* PBXTargetDependency */,
+			);
+			name = "MemeMoodTracker WatchKit App";
+			productName = "MemeMoodTracker WatchKit App";
+			productReference = 954572AF1C12E09F0099ED1E /* MemeMoodTracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		954572BD1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954572CC1C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTracker WatchKit Extension" */;
+			buildPhases = (
+				954572BA1C12E09F0099ED1E /* Sources */,
+				954572BB1C12E09F0099ED1E /* Frameworks */,
+				954572BC1C12E09F0099ED1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MemeMoodTracker WatchKit Extension";
+			productName = "MemeMoodTracker WatchKit Extension";
+			productReference = 954572BE1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9545727F1C12E09E0099ED1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Pedro Ruíz";
+				TargetAttributes = {
+					954572861C12E09E0099ED1E = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					9545729A1C12E09F0099ED1E = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 954572861C12E09E0099ED1E;
+					};
+					954572A51C12E09F0099ED1E = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 954572861C12E09E0099ED1E;
+					};
+					954572AE1C12E09F0099ED1E = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					954572BD1C12E09F0099ED1E = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 954572821C12E09E0099ED1E /* Build configuration list for PBXProject "MemeMoodTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9545727E1C12E09E0099ED1E;
+			productRefGroup = 954572881C12E09E0099ED1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				954572861C12E09E0099ED1E /* MemeMoodTracker */,
+				9545729A1C12E09F0099ED1E /* MemeMoodTrackerTests */,
+				954572A51C12E09F0099ED1E /* MemeMoodTrackerUITests */,
+				954572AE1C12E09F0099ED1E /* MemeMoodTracker WatchKit App */,
+				954572BD1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		954572851C12E09E0099ED1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954572951C12E09E0099ED1E /* LaunchScreen.storyboard in Resources */,
+				954572921C12E09E0099ED1E /* Assets.xcassets in Resources */,
+				954572901C12E09E0099ED1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572991C12E09F0099ED1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572A41C12E09F0099ED1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572AD1C12E09F0099ED1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954572B81C12E09F0099ED1E /* Assets.xcassets in Resources */,
+				954572B61C12E09F0099ED1E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572BC1C12E09F0099ED1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954572C81C12E09F0099ED1E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		954572831C12E09E0099ED1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9545728D1C12E09E0099ED1E /* ViewController.swift in Sources */,
+				9545728B1C12E09E0099ED1E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572971C12E09F0099ED1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954572A01C12E09F0099ED1E /* MemeMoodTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572A21C12E09F0099ED1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954572AB1C12E09F0099ED1E /* MemeMoodTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954572BA1C12E09F0099ED1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954572C61C12E09F0099ED1E /* ExtensionDelegate.swift in Sources */,
+				954572C41C12E09F0099ED1E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9545729D1C12E09F0099ED1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954572861C12E09E0099ED1E /* MemeMoodTracker */;
+			targetProxy = 9545729C1C12E09F0099ED1E /* PBXContainerItemProxy */;
+		};
+		954572A81C12E09F0099ED1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954572861C12E09E0099ED1E /* MemeMoodTracker */;
+			targetProxy = 954572A71C12E09F0099ED1E /* PBXContainerItemProxy */;
+		};
+		954572B21C12E09F0099ED1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954572AE1C12E09F0099ED1E /* MemeMoodTracker WatchKit App */;
+			targetProxy = 954572B11C12E09F0099ED1E /* PBXContainerItemProxy */;
+		};
+		954572C11C12E09F0099ED1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954572BD1C12E09F0099ED1E /* MemeMoodTracker WatchKit Extension */;
+			targetProxy = 954572C01C12E09F0099ED1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9545728E1C12E09E0099ED1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9545728F1C12E09E0099ED1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		954572931C12E09E0099ED1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				954572941C12E09E0099ED1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		954572B41C12E09F0099ED1E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				954572B51C12E09F0099ED1E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		954572CA1C12E09F0099ED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		954572CB1C12E09F0099ED1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		954572CD1C12E09F0099ED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MemeMoodTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		954572CE1C12E09F0099ED1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MemeMoodTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		954572D11C12E09F0099ED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MemeMoodTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "MemeMoodTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		954572D21C12E09F0099ED1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = MemeMoodTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "MemeMoodTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		954572D51C12E09F0099ED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MemeMoodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		954572D61C12E09F0099ED1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MemeMoodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		954572D81C12E09F0099ED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MemeMoodTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemeMoodTracker.app/MemeMoodTracker";
+			};
+			name = Debug;
+		};
+		954572D91C12E09F0099ED1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MemeMoodTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemeMoodTracker.app/MemeMoodTracker";
+			};
+			name = Release;
+		};
+		954572DB1C12E09F0099ED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MemeMoodTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MemeMoodTracker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		954572DC1C12E09F0099ED1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MemeMoodTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.entrepreneurgt.MemeMoodTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MemeMoodTracker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		954572821C12E09E0099ED1E /* Build configuration list for PBXProject "MemeMoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954572CA1C12E09F0099ED1E /* Debug */,
+				954572CB1C12E09F0099ED1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954572CC1C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954572CD1C12E09F0099ED1E /* Debug */,
+				954572CE1C12E09F0099ED1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		954572D01C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954572D11C12E09F0099ED1E /* Debug */,
+				954572D21C12E09F0099ED1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		954572D41C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954572D51C12E09F0099ED1E /* Debug */,
+				954572D61C12E09F0099ED1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		954572D71C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954572D81C12E09F0099ED1E /* Debug */,
+				954572D91C12E09F0099ED1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		954572DA1C12E09F0099ED1E /* Build configuration list for PBXNativeTarget "MemeMoodTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954572DB1C12E09F0099ED1E /* Debug */,
+				954572DC1C12E09F0099ED1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9545727F1C12E09E0099ED1E /* Project object */;
+}
