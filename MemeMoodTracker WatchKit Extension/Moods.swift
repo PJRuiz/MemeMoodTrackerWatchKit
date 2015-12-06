@@ -47,5 +47,20 @@ enum Moods:Int {
             return baseDescription + labelText() + endDescription
         }
     }
+    
+    func adviceText() -> String {
+        switch self {
+        case .Ok:
+            return "Ok"
+        case .NotBad:
+            return "Not Bad"
+        case .Hmmm:
+            return "Hmmm"
+        case .Anger:
+            return "Anger"
+        case .Rage:
+            return "Gooooooooosfraba"
+        }
+    }
 
 }

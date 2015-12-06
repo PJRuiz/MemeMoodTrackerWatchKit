@@ -21,6 +21,7 @@ class MoodDetailsController: WKInterfaceController {
     @IBOutlet var moodAdviceLabel: WKInterfaceLabel!
     
     var currentMood = 0
+    var shouldShowAdvice = true
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -29,6 +30,7 @@ class MoodDetailsController: WKInterfaceController {
         
         if let moodContextData = context as? MoodContextData {
             currentMood = moodContextData.moodIndex
+            shouldShowAdvice = moodContextData.shouldShowAdvice
         }
     }
     
@@ -40,7 +42,13 @@ class MoodDetailsController: WKInterfaceController {
             moodImage.setImageNamed(mood.imageName())
             moodNameLabel.setText(mood.labelText())
             moodDescriptionLabel.setText(mood.descriptionText())
+            if shouldShowAdvice {
+                moodAdviceLabel.setText(mood.adviceText())
+            } else {
+                moodAdviceLabel.setHidden(true)
+            }
         }
+        
     }
     
     

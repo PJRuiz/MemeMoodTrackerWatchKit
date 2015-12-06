@@ -13,9 +13,11 @@ import Foundation
 
 class MoodContextData {
     let moodIndex: Int
+    let shouldShowAdvice: Bool
     
-    init(moodIndex: Int) {
+    init(moodIndex: Int, shouldShowAdvice: Bool) {
         self.moodIndex = moodIndex
+        self.shouldShowAdvice = shouldShowAdvice
     }
 }
 
@@ -23,11 +25,8 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var moodImage: WKInterfaceImage!
     
-    
-    
     var currentMood: Int = 0
     var shouldShowAdvice = true
-    
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -70,7 +69,7 @@ class InterfaceController: WKInterfaceController {
     
     override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
         if segueIdentifier == "RecordMoodSegue" {
-            return MoodContextData(moodIndex: currentMood)
+            return MoodContextData(moodIndex: currentMood,shouldShowAdvice: shouldShowAdvice)
         }
         
         return nil
