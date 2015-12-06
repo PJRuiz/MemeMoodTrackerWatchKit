@@ -10,8 +10,25 @@ import WatchKit
 import Foundation
 
 
+
+class MoodContextData {
+    let moodIndex: Int
+    
+    init(moodIndex: Int) {
+        self.moodIndex = moodIndex
+    }
+}
+
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var moodImage: WKInterfaceImage!
+    
+    
+    
+    var currentMood: Int = 0
+    var shouldShowAdvice = true
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -28,4 +45,34 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func moodSliderChanged(value: Float) {
+        currentMood = Int(value)
+        updateMoodImage()
+    }
+    
+    @IBAction func switchValueChanged(value: Bool) {
+        shouldShowAdvice = value
+        
+    }
+    
+    
+    @IBAction func recordMoodTapped() {
+        pushControllerWithName("MoodDetailsController", context: nil)
+    }
+    
+    func updateMoodImage() {
+        if currentMood < 0 || currentMood > 4 {
+            return
+        }
+        
+        moodImage.setImageNamed("rage\(currentMood)")
+    }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
+        if segueIdentifier == "RecordMoodSegue" {
+            return MoodContextData(moodIndex: currentMood)
+        }
+        
+        return nil
+    }
 }
